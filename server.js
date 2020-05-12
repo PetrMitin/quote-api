@@ -6,7 +6,7 @@ const { getRandomElement, getQuoteById, deleteQuoteById } = require('./utils');
 
 const PORT = process.env.PORT || 4000;
 
-app.use(express.static('./'));
+app.use(express.static('public'));
 
 //Get all quotes
 app.get('/api/quotes', (req, res) => {
